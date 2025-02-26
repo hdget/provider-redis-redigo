@@ -1,4 +1,4 @@
-package redigo
+package redis_redigo
 
 import (
 	"github.com/hdget/common/types"
