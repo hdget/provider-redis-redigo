@@ -6,11 +6,15 @@ import (
 	"go.uber.org/fx"
 )
 
+const (
+	providerName = "redis-redigo"
+)
+
 var Capability = &types.Capability{
 	Category: types.ProviderCategoryRedis,
-	Name:     types.ProviderNameRedisRedigo,
+	Name:     providerName,
 	Module: fx.Module(
-		string(types.ProviderNameRedisRedigo),
+		providerName,
 		fx.Provide(pkg.New),
 	),
 }
