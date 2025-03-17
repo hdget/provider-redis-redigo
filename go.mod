@@ -4,7 +4,7 @@ go 1.23.1
 
 require (
 	github.com/gomodule/redigo v1.9.2
-	github.com/hdget/common v0.0.5
+	github.com/hdget/common v0.0.7
 	github.com/hdget/utils v0.0.1
 	github.com/pkg/errors v0.9.1
 	go.uber.org/fx v1.23.0
