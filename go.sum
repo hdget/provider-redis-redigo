@@ -8,8 +8,8 @@ github.com/gomodule/redigo v1.9.2 h1:HrutZBLhSIU8abiSfW8pj8mPhOyMYjZT/wcA4/L9L9s
 github.com/gomodule/redigo v1.9.2/go.mod h1:KsU3hiK/Ay8U42qpaJk+kuNa3C+spxapWpM+ywhcgtw=
 github.com/google/go-cmp v0.5.9 h1:O2Tfq5qg4qc4AmwVlvv0oLiVAGB7enBSJ2x2DqQFi38=
 github.com/google/go-cmp v0.5.9/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
-github.com/hdget/common v0.0.5 h1:QVhRk8fS2cg6+4+HRWaHwxCdk1GJ5IUZdHTzaCyDpMA=
-github.com/hdget/common v0.0.5/go.mod h1:HL7vIFTG2QwgI4tHg7Q1ceaKZ40f5LeFf9h1w5AyPJk=
+github.com/hdget/common v0.0.7 h1:fRhJMJolAGorSWR1pqR5V2PAymNTYsjgRQu9Eyj9lf4=
+github.com/hdget/common v0.0.7/go.mod h1:HL7vIFTG2QwgI4tHg7Q1ceaKZ40f5LeFf9h1w5AyPJk=
 github.com/hdget/utils v0.0.1 h1:tdkKInkv2I97VRIcnsVy8FyMzFYBAiLL/FV4jlTPb6Q=
 github.com/hdget/utils v0.0.1/go.mod h1:1cmY9zQ+KBpsaf58IJQ3kwv2+1NC4dCFLnT6qQG4028=
 github.com/kisielk/errcheck v1.5.0/go.mod h1:pFxgyoBC7bSaBwPgfKdkLd5X25qrDl4LWUI2bnpBCr8=
