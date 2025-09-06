@@ -1,23 +1,22 @@
 package redis_redigo
 
 import (
-	"github.com/hdget/common/intf"
 	"github.com/hdget/common/types"
 )
 
 type redigoProvider struct {
-	defaultClient intf.RedisClient            // 缺省redis
-	extraClients  map[string]intf.RedisClient // 额外的redis
+	defaultClient types.RedisClient            // 缺省redis
+	extraClients  map[string]types.RedisClient // 额外的redis
 }
 
-func New(configProvider intf.ConfigProvider, logger intf.LoggerProvider) (intf.RedisProvider, error) {
+func New(configProvider types.ConfigProvider, logger types.LoggerProvider) (types.RedisProvider, error) {
 	config, err := newConfig(configProvider)
 	if err != nil {
 		return nil, err
 	}
 
 	p := &redigoProvider{
-		extraClients: make(map[string]intf.RedisClient),
+		extraClients: make(map[string]types.RedisClient),
 	}
 
 	if config.Default != nil {
@@ -43,10 +42,10 @@ func (p *redigoProvider) GetCapability() types.Capability {
 	return Capability
 }
 
-func (p *redigoProvider) My() intf.RedisClient {
+func (p *redigoProvider) My() types.RedisClient {
 	return p.defaultClient
 }
 
-func (p *redigoProvider) By(name string) intf.RedisClient {
+func (p *redigoProvider) By(name string) types.RedisClient {
 	return p.extraClients[name]
 }
